@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Yu Mincho','Verdana', 'Hiragino Sans', 'Meiryo', sans-serif;
+    background-color: rgb(251, 228, 145);
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 40px;
+    border-radius: 20px;
+    padding: 6px 0;
+    margin: 20px auto;
+    width: 300px;
+    text-align: center;
+}
+
+h2{
+    font-size: 25px;
+}
+
+img {
+    height: 140px;
+}
+
+.men {
+    justify-content: left;
+    display: flex;
+    margin-bottom: 30px;
+    
+}
+
+.syokai{
+    margin-left: 20px;
+}
+
+.A{
+    background-image: url(../image/character_tsumayouji2.png);
+    background-repeat: repeat-y;
+    background-position: left top;
+    padding: 500px 0px 500px 150px;
+}
+
+.C{
+    background-image: url(../image/character_tsumayouji3.png);
+    background-repeat: repeat-y;
+    background-position: right top;
+    padding: 500px 0px 500px 150px;
+}
+
+.Z{
+    justify-content: space-between;
+    display: flex;
+}

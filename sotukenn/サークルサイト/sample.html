@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>爪楊枝サークル</title>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-text">
+            <p class="brand-kicker">Toothpick Circle</p>
+            <h1 class="brand-title">爪楊枝サークル</h1>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a href="../サークルメンバー/index.html" class="nav-cta">メンバー</a>
+          <a href="#about">紹介</a>
+          <a href="#activities">活動</a>
+          <a href="#schedule">日程</a>
+          <a href="#join">募集</a>
+          <a href="#contact" >お問い合わせ</a>
+
+          <form id="searchForm">
+            <input
+              class="form-text"
+              type="search"
+              id="searchInput"
+              placeholder="何かを探す …"
+              required
+            />
+          </form>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="hero-eyebrow">Welcome to</p>
+            <h2 class="hero-title">爪楊枝サークル!!!</h2>
+            <p class="hero-lead">
+              私たちは、<strong>爪楊枝の可能性を本気で追求するサークル</strong>です。<br />
+              「細い」「折れやすい」「地味」――そんなイメージを覆し、創作・研究・交流を楽しみます。
+            </p>
+
+            <div class="hero-buttons">
+              <a class="btn primary" href="#join">見学してみる</a>
+              <a class="btn ghost" href="#activities">活動を見る</a>
+            </div>
+
+            <!-- 隠し要素（5回クリックで表示） -->
+            <div class="tsumayouji-secret">
+              <img
+                src="image/tsumayouji_taba.png"
+                id="clickable-image"
+                alt="つまようじ"
+                class="tsumayouji-image"
+              />
+              <p id="secret-text" class="hero-secret-text" aria-live="polite"></p>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h3 class="section-title">サークル紹介</h3>
+          <p class="section-text">
+            爪楊枝サークルは、ものづくりが好きな人・ちょっと変わった活動をしてみたい人・
+            真面目にふざけたい人が集まる<strong>ゆるくて真剣なサークル</strong>です。
+            活動内容は自由度が高く、初心者でも大歓迎です。
+          </p>
+
+          <div class="chips">
+            <span class="chip">ものづくり</span>
+            <span class="chip">実験</span>
+            <span class="chip">アート</span>
+            <span class="chip">交流</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="activities" class="section alt">
+        <div class="container">
+          <h3 class="section-title">主な活動内容</h3>
+
+          <div class="grid">
+            <article class="card">
+              <h4 class="card-h">爪楊枝建築</h4>
+              <ul class="bullets">
+                <li>タワー・橋・オブジェを制作</li>
+                <li>強度や美しさを競う制作会</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h4 class="card-h">爪楊枝研究</h4>
+              <ul class="bullets">
+                <li>何本まで耐えられるか実験</li>
+                <li>折れにくい組み方の研究</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h4 class="card-h">爪楊枝アート</h4>
+              <ul class="bullets">
+                <li>ミニチュア作品の制作</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h4 class="card-h">交流活動</h4>
+              <ul class="bullets">
+                <li>他サークルとの合同制作</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule" class="section">
+        <div class="container">
+          <h3 class="section-title">活動日・場所</h3>
+
+          <div class="info">
+            <div class="info-row">
+              <div class="info-label">活動日</div>
+              <div class="info-value">毎日活動中</div>
+            </div>
+            <div class="info-row">
+              <div class="info-label">場所</div>
+              <div class="info-value">216教室</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="join" class="section alt">
+        <div class="container">
+          <h3 class="section-title">部員募集中！</h3>
+          <p class="section-text">
+            現在、爪楊枝サークルでは<strong>常識にとらわれない仲間</strong>を大募集しています。
+          </p>
+
+          <div class="join-box">
+            <ul class="bullets">
+              <li>経験・学年不問</li>
+              <li>見学だけでもOK</li>
+              <li>爪楊枝はこちらで用意します</li>
+            </ul>
+            <a class="btn primary" href="#contact">連絡してみる</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="mystery">
+        <div class="container">
+          <!-- こする領域 -->
+          <div id="mystery-space" class="mystery-space">
+            <p id="secret-message" class="secret-message">Message</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h3 class="section-title">お問い合わせ</h3>
+
+          <div class="contact">
+            <div class="contact-item">
+              <p class="contact-label">メール</p>
+              <p class="contact-value">
+                <a href="mailto:toothpick_circle@example.com"
+                  >toothpick_circle@example.com</a
+                >
+              </p>
+            </div>
+
+            <div class="contact-item">
+              <p class="contact-label">学内掲示板</p>
+              <p class="contact-value">爪楊枝サークル ポスター掲載中</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          © Toothpick Circle<br />
+          ※このサイトはフィクションです。実在する団体・人物とは関係ありません。
+        </p>
+        <a href="#" class="to-top">↑ Top</a>
+      </div>
+    </footer>
+
+    <script src="js/members.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

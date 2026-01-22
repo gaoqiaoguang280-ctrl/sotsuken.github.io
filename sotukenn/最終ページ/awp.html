@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hash Sample</title>
+</head>
+<body>
+    <h2>hash値を利用した回答送信</h2>
+
+    <input type="text" id="text_input" placeholder="文字列を入力">
+    <button id="hash_btn">ハッシュ化</button>
+
+    <p id="hash_value">hash値 = </p>
+
+    <script>
+        async function digestMessage(message) {
+            const msgUint8 = new TextEncoder().encode(message); //文字列 → UTF-8のバイト列に変換
+            const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8); //Web Crypto APIでSHA-256を計算
+            const hashArray = Array.from(new Uint8Array(hashBuffer)); //ArrayBuffer → バイト配列に変換
+            const hashHex = hashArray
+                .map(b => b.toString(16).padStart(2, '0')) //16進数文字列に変換
+                .join('');
+            return hashHex;
+        }
+
+        document.getElementById('hash_btn').addEventListener('click', async () => {
+            const inputText = document.getElementById('text_input').value;
+
+            if (inputText === '') {
+                alert('文字列を入力してください');
+                return;
+            }
+
+            const hash = await digestMessage(inputText);
+
+            document.getElementById('hash_value').textContent = 'hash値 = ' + hash;
+        });
+    </script>
+
+</body>
+</html>
